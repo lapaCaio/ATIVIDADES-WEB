@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <div align="center">
+
+        <form method="post">
+            <table border="1px">
+                <tr>
+                    <td>
+                        <div align="right">
+                            <label for="name">Nome: </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" name="name" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">
+                            <label for="passsword">Senha:</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="password" pattern="[\w]{8,15}" name="senha">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span align="right"><label for="os">Sistema Operacional:</label></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="os" value="Windows 7">Windows 7
+                        <input type="checkbox" name="os" value="Windows 10">Windows 10
+                        <input type="checkbox" name="os" value="Linux">Linux
+                        <input type="checkbox" name="os" value="Mac OS">Mac OS
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">
+                            <label for="">Processador:</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="radio" name="processor">Intel
+                        <input type="radio" name="processor">AMD
+                        <input type="radio" name="processor">Cyrix
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">
+                            <label for="carrier">Profissão:</label>
+                        </div>
+                    </td>
+                    <td>
+                        <select name="carrier" multiple size="2">
+                            <option value="Analista de Sistemas">Analista de Sistemas</option>
+                            <option value="Analista de Suporte">Analista de Suporte</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">
+                            <label for="comment">Comentários:</label>
+                        </div>
+                    </td>
+                    <td>
+                        <textarea name="comment"  cols="50" rows="3" pattern="[\w]" ></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div align="center" margin="100px">
+                <input type="submit" value="Enviar Dados">
+                    &nbsp;&nbsp;
+                    <input type="reset" value="Limpar Dados">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
