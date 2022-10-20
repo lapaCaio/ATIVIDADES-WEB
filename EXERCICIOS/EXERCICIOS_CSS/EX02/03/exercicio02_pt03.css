@@ -1,0 +1,21 @@
+body {
+    background: #ffffff url(../IMAGES/imageCSS.jpg) repeat-x fixed right bottom;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+    background-color: gray;
+}
+
+h3 {
+    color: green;
+}
+
+p {
+    color: black;
+    background-color: #ffffff;
+}
