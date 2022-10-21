@@ -1,4 +1,5 @@
 body {
+    color: black;
     background: #ffffff url(../IMAGES/imageCSS.jpg) repeat-x fixed right bottom;
 }
 
@@ -13,9 +14,4 @@ h2 {
 
 h3 {
     color: green;
-}
-
-p {
-    color: black;
-    background-color: #ffffff;
 }

@@ -3,6 +3,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
+    background-color: white;
+    color: black;
 }
 
 h1 {
@@ -16,9 +18,4 @@ h2 {
 
 h3 {
     color: green;
-}
-
-p {
-    background-color: white;
-    color: black;
 }
