@@ -1,6 +1,31 @@
 body {
-    background-image: url(https://utilizandobim.com/wp-content/uploads/2021/02/tipos-de-tijolos.jpg);
+    background-image: url(https://www.montana.com.br/wp-content/uploads/2022/05/Tijolos-a-vista.jpg);
     color: white;
     background-repeat: repeat;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 30pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24pt;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+p {
+    text-indent: 26px;
 }
