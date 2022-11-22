@@ -13,61 +13,69 @@
             <img src="../SRC/imagens/logo.png" alt="fashion logo">
         </div>
         <nav>
-            <a href="#">Portfolio</a>
-            <a href="#">About us</a>
-            <a href="#">Contact</a>  
+            <a href="#portifolio">Portfolio</a>
+            <a href="#about">About us</a>
+            <a href="#contact">Contact</a>  
         </nav>
     </header>
     <main>
         <div>
-            <img src="../SRC/imagens/topo.jpg">
+            <img src="../SRC/imagens/topo.jpg" class="div-img">
         </div>
-        <div>
-            <img src="" alt="">
+        <a name="portifolio"></a>
+        <div class="fashion-text">
             <h2>New Fashion Everything Never Enough</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat nisi non ante dictum congue. Cras id odio gravida, posuere velit sed, lacinia mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vehicula, ipsum vel congue cursus, mi neque tincidunt enim, egestas porttitor felis neque et risus. Maecenas fringilla hendrerit enim malesuada laoreet. Aenean quis tortor a odio tempus tincidunt. Vivamus rutrum nulla sed metus congue bibendum. Sed ut aliquam purus. Donec odio mauris, commodo sed dignissim vitae, dapibus eget mauris.</p>
         </div>
-        
         <article>
-            <div id="flex-item01">
+            <div class="growdv">
                 <img src="../SRC/imagens/modelo1.jpg">
                 <h3>Vest Romasa</h3>
                 <p>Strong & charismatic</p>
             </div>
-            <div>
+            <div class="growdv">
                 <img src="../SRC/imagens/modelo2.jpg">
                 <h3>Jacket Fima</h3>
                 <p>Strong Sersonality</p>
             </div>
-            <div>
+            <div class="growdv">
                 <img src="../SRC/imagens/modelo3.jpg">
                 <h3>Jacket Black Kira</h3>
                 <p>Power Fascinating</p>
             </div>
         </article>
-
-        <div>
+        <a id="about"></a>
+        <div class="fashion-box">
             <h2>
-                Everything Never Enough
+                Everything Never Enough <br>
                 Just Fashion
             </h2>
-            <p>Praesent placerat eros eget lacus ullamcorper, id dapibus ante vestibulum. Curabitur quis condimentum diam. Duis aliquet erat vel laoreet tincidunt. Pellentesque vitae varius ligula. Phasellus in nibh tempus, gravida justo et, suscipit felis. Cras ornare arcu ac sodales tincidunt. Mauris vehicula erat vel ligula porttitor imperdiet. Curabitur nec magna urna. Sed porta ex ex, at pulvinar nibh aliquet quis. Integer dapibus congue vestibulum. Phasellus bibendum lobortis quam, nec sollicitudin nisl volutpat at.</p>
+            <div class="imgp-container">
+                <p>Praesent placerat eros eget lacus ullamcorper, id dapibus ante vestibulum. Curabitur quis condimentum diam. Duis aliquet erat vel laoreet tincidunt. Pellentesque vitae varius ligula. Phasellus in nibh tempus, gravida justo et, suscipit felis. Cras ornare arcu ac sodales tincidunt. Mauris vehicula erat vel ligula porttitor imperdiet. Curabitur nec magna urna. Sed porta ex ex, at pulvinar nibh aliquet quis. Integer dapibus congue vestibulum. Phasellus bibendum lobortis quam, nec sollicitudin nisl volutpat at.</p>
+            
+                <img src="../SRC/imagens/bg_detalhe.png" alt="bg detalhe" id="bg-detalhe">
+            </div> 
         </div>
-
-        <div>
-            <h4>
-                Call me now for design
+        <a id="contact"></a>
+        <div class="callme">
+            <h3>
+                Call me now for design <br>
                 012-1234-4567
-            </h4>
+            </h3>
         </div>
-        <div>
+        <div class="div-iframe">
             <!--iFrame do GoogleMaps-->
-            <iframe src="https://www.google.com.br/maps/place/Alegre,+ES,+29500-000/@-20.7637434,-41.5412106,15z/data=!4m5!3m4!1s0xbbebc3e50e781f:0x7bb8edafd6ede49f!8m2!3d-20.7626116!4d-41.5315855" frameborder="0"></iframe>
+            <div class="quadro-mapa">
+                <div class="gmapa">
+                    <iframe src="https://maps.google.com/maps?q=Alegre&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe>
+                </div>
+            </div>
+            
         </div>
 
     </main>
     <footer>
-        <p>Copyright � fastfashion.com</p>
+        <p>Copyright &copy; fastfashion.com</p>
     </footer>
 </body>
 </html>

@@ -1,12 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*CABEÇALHO*/
+
 header {
-    background: black;
+    background: #081a24;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 10%;
-    z-index: 999px;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+header a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #295263;
+    text-decoration: none;
+}
+
+header a:focus {
+    color: white;
+}
+
+header a:hover {
+    color: white;
+    transition: 300ms;
 }
 
 .hflex-container {
@@ -19,8 +51,135 @@ nav a {
     padding: 0 2vw;
 }
 
-footer {
-    background: black;
+/*CORPO DO SITE*/
+
+.div-img {
+    padding-top: 9vh;
     width: 100%;
-    height: 10%; n ta mudando aqui!!!!
+}
+
+.fashion-text {
+    text-align: center;
+    padding: 15vh 10vw;
+    line-height: 2em;
+}
+
+.fashion-text p {
+    box-sizing: border-box;
+    padding-top: 6vh;
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+}
+
+article {
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.growdv {
+    text-align: center;
+    color: rgb(45, 45, 45);
+    padding-bottom: 10vh;
+}
+
+.growdv:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    padding-top: 6vh;
+}
+.growdv img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+article div h3 {
+    text-transform: uppercase;
+    margin: 2vh 0;
+    letter-spacing: 3px;
+    color: rgb(50, 50, 50);
+}
+
+.fashion-box {
+    background: #003d50;
+    color: white;
+    padding: 15vh 0 0 10vw;
+    margin: 1vh 0 0 0;
+}
+
+.fashion-box h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3em;
+}
+
+.fashion-box p {
+    display: inline;
+    float: left;
+    padding: 8vh 10vw 10vh 0;
+}
+
+.fashion-box img {
+    display: inline;
+    height: 364px;
+    width: 449px;
+}
+
+.imgp-container {
+    display: flex;
+}
+
+#bg-detalhe {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.callme {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10vh 0;
+    color: #05161e;
+}
+
+.div-iframe {
+  padding-bottom: 10vh;
+}
+
+.quadro-mapa{
+    position:relative;
+    text-align:right;
+    height:400px;
+    width:100%;
+}
+
+.gmapa{
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:100%;
+}
+
+/*RODAPÉ*/
+
+footer {
+    background: #001018;
+    height: 10%;
+    text-align: center;
+    padding: 3vh;
+    font-size: small;
+    color: #20404e;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header {
+        width: 600px;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+    }
 }
