@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: yellow;
+    padding: 10px;
+}
+
+@media screen and (min-width: 600px){
+    .box {
+        display: none;
+    }
+}
