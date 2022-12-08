@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <title>Forms com Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1 class="page-header">Exemplo 03 - Formulário Estilizado com Bootstrap</h1>
+
+
+        <form action="form.html" method="post" class="form-horizontal">
+
+
+            <div class="form-group row">
+                <label for="nome" class="control-label col-sm-1 col-form-label">Nome:</label>
+                <div class="col-sm-7">
+                    <input type="text" name="nome" id="nome" placeholder="Fulano da Silva" class="form-control">
+                </div>
+
+                <label for="cpf" class="col-sm-1 control-label col-form-label">CPF:</label>
+                <div class="col-sm-3">
+                    <input type="number" name="cpf" id="cpf" placeholder="999.999.999-99" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-1 control-label col-form-label">E-mail:</label>
+                <div class="col-sm-3">
+                    <input type="email" name="email" id="email" placeholder="exemplo@email.com" class="form-control">
+                </div>
+
+                <label for="telefone" class="col-sm-1 control-label col-form-label">Telefone:</label>
+                <div class="col-sm-3">
+                    <input type="number" name="telefone" id="telefone" placeholder="(00)XXXXX-XXXX" class="form-control">
+                </div>
+
+                <label for="celular" class="col-sm-1 control-label col-form-label">Celular:</label>
+                <div class="col-sm-3">
+                    <input type="number" name="celular" id="celular" placeholder="(00)XXXXX-XXXX" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Estado" class="col-sm-1 control-label col-form-label">Estado:</label>
+                <select name="Estado" size="1" id="Estado" class="form-control col-sm-5">
+                    <option value="">Espírito Santo</option>
+                    <option value="">Santos Drummond</option>
+                    <option value="">Minas Gerais</option>
+                </select>
+                
+                <label for="cidade" class="col-sm-1 control-label col-form-label">Cidade:</label>
+                <select name="cidade" id="cidade" class="form-control col-sm-5">
+                    <option value="">Derrota</option>
+                    <option value="">Vitória</option>
+                    <option value="">Belo Horizonte</option>
+                    <option value="">Sâo Paulo</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
