@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function criarPagina() {
+            var novaPagina = window.open();
+        }
+    
+        function escreverMensagem() {
+            if(!novaPagina) {
+                alert("Crie uma página antes de escrever uma mensagem.");
+                return;
+            }
+    
+            var mensagem = prompt("Insira a mensagem a ser escrita:");
+            novaPagina.document.write(mensagem);
+        }
+    
+        function mudarCor() {
+            if(!novaPagina) {
+                alert("Crie uma página antes de mudar a cor.");
+                return;
+            }
+    
+            novaPagina.document.bgColor = "blue";
+            novaPagina.document.foreColor = "white";
+        }
+    
+        function fecharPagina() {
+            if(!novaPagina) {
+                alert("Não há página para ser fechada.");
+                return;
+            }
+    
+            novaPagina.close();
+        }    
+
+    </script>
+</head>
+<body>
+    <form>
+        <button onclick="criarPagina()">Criar</button>
+        <button onclick="escreverMensagem()">Escrever</button>
+        <button onclick="mudarCor()">Mudar</button>
+        <button onclick="fecharPagina()">Fechar</button>
+    </form>     
+</body>
+</html>

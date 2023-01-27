@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <script>
+        var nomes = [];
+        var emails = [];
+        
+        function cadastrar() {
+        var nome = document.getElementById("nome").value;
+        var email = document.getElementById("email").value;
+        
+        nomes.push(nome);
+        emails.push(email);
+        
+        document.getElementById("nome").value = "";
+        document.getElementById("email").value = "";
+        }
+        
+        function listar() {
+        var lista = "<h2>Usuários Cadastrados</h2>";
+        
+        for (var i = 0; i < nomes.length; i++) {
+            lista += "<p>" + nomes[i] + " - " + emails[i] + "</p>";
+        }
+        
+        document.getElementById("saida").innerHTML = lista;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        <br>
+        <input type="button" value="Cadastrar" onclick="cadastrar()">
+        <input type="button" value="Listar" onclick="listar()">
+    </form>
+    <div id="saida"></div>
+</body>
+</html>

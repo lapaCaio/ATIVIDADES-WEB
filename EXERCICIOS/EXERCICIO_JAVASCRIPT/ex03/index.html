@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = prompt("Insira a data no formato dd/mm/yyyy: ");
+        var dataArray = data.split("/");
+        var dia = dataArray[0];
+        var mes = dataArray[1];
+        var ano = dataArray[2];
+
+        var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+        var nomeMes = meses[mes - 1];
+
+        alert(dia + " de " + nomeMes + " de " + ano);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

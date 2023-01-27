@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Checkboxes</title>
+</head>
+<body>
+  <form onsubmit="return checkCheckboxes()">
+    <input type="checkbox" name="group1" value="option1">Option 1<br>
+    <input type="checkbox" name="group1" value="option2">Option 2<br>
+    <input type="checkbox" name="group1" value="option3">Option 3<br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function checkCheckboxes() {
+      var checkboxes = document.getElementsByName('group1');
+      var checkboxChecked = false;
+
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          checkboxChecked = true;
+          break;
+        }
+      }
+
+      if (!checkboxChecked) {
+        alert('Por favor, selecione pelo menos uma opção.');
+        return false;
+      } else {
+        alert('Seleção enviada com sucesso!');
+        return true;
+      }
+    }
+  </script>
+</body>
+</html>

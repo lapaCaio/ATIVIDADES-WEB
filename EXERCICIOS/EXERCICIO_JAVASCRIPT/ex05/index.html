@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let salary = parseFloat(prompt("Informe o salário atual do colaborador:"));
+        let increasePercentage;
+        let increaseAmount;
+        let newSalary;
+
+        if (salary <= 280) {
+            increasePercentage = 0.2;
+        } else if (salary > 280 && salary <= 700) {
+            increasePercentage = 0.15;
+        } else if (salary > 700 && salary <= 1500) {
+            increasePercentage = 0.1;
+        } else {
+            increasePercentage = 0.05;
+        }
+
+        increaseAmount = salary * increasePercentage;
+        newSalary = salary + increaseAmount;
+
+        console.log("Salário antes do reajuste: R$ " + salary.toFixed(2));
+        console.log("Percentual de aumento aplicado: " + (increasePercentage * 100) + "%");
+        console.log("Valor do aumento: R$ " + increaseAmount.toFixed(2));
+        console.log("Novo salário, após o aumento: R$ " + newSalary.toFixed(2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+

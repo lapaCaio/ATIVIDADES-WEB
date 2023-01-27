@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <head>
+    <title>Criador de Página</title>
+  </head>
+  <body>
+    <form>
+      <label>Título:</label>
+      <input type="text" id="title" name="title" required><br>
+      
+      <label>Subtítulo 1:</label>
+      <input type="text" id="subtitle1" name="subtitle1" required><br>
+      
+      <label>Texto da Seção 1:</label>
+      <textarea id="text1" name="text1" required></textarea><br>
+      
+      <label>Cor da Seção 1:</label>
+      <input type="color" id="color1" name="color1" required><br>
+      
+      <label>Subtítulo 2:</label>
+      <input type="text" id="subtitle2" name="subtitle2" required><br>
+      
+      <label>Texto da Seção 2:</label>
+      <textarea id="text2" name="text2" required></textarea><br>
+      
+      <label>Cor da Seção 2:</label>
+      <input type="color" id="color2" name="color2" required><br>
+      
+      <button type="button" onclick="previewPage()">Preview</button>
+      <button type="button" onclick="generateHTML()">Gerar Página</button>
+    </form>
+    
+    <textarea id="htmlCode" style="display: none;"></textarea>
+    
+    <script>
+      function previewPage() {
+        var title = document.getElementById("title").value;
+        var subtitle1 = document.getElementById("subtitle1").value;
+        var text1 = document.getElementById("text1").value;
+        var color1 = document.getElementById("color1").value;
+        var subtitle2 = document.getElementById("subtitle2").value;
+        var text2 = document.getElementById("text2").value;
+        var color2 = document.getElementById("color2").value;
+        
+        var newWindow = window.open("", "Preview", "height=500,width=500");
+        newWindow.document.write("<html><head><title>" + title + "</title></head><body>");
+        newWindow.document.write("<h1>" + title + "</h1>");
+        newWindow.document.write("<h2 style='color: " + color1 + ";'>" + subtitle1 + "</h2>");
+        newWindow.document.write("<p>" + text1 + "</p>");
+        newWindow.document.write("<h2 style='color: " + color2 + ";'>" + subtitle2 + "</h2>");
+        newWindow.document.write("<p>" + text2 + "</p>");
+        newWindow.document.write("</body></html>");
+        newWindow.focus();
+      }
+      
+      function generateHTML() {
+        var title = document.getElementById("title").value

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Data</title>
+  <script>
+    function validarData() {
+      var dataEntrada = document.getElementById("data").value;
+      var formatoData = /^\d{2}\/\d{2}\/\d{2}$/;
+      var campoData = document.getElementById("data");
+      var mensagemErro = document.getElementById("erro");
+
+      if(!dataEntrada.match(formatoData)) {
+        campoData.style.backgroundColor = "yellow";
+        campoData.focus();
+        mensagemErro.innerHTML = "Formato de data inválido. Por favor, use dd/mm/aa.";
+        return false;
+      } else {
+        campoData.style.backgroundColor = "white";
+        mensagemErro.innerHTML = "";
+        var hoje = new Date();
+        var dataEntrada = new Date(dataEntrada);
+        var diferencaTempo = Math.abs(dataEntrada.getTime() - hoje.getTime());
+        var diferencaDias = Math.ceil(diferencaTempo / (1000 * 3600 * 24));
+        var diferencaMeses = Math.round(diferencaDias/30);
+        var diferencaAnos = Math.round(diferencaDias/365);
+        document.getElementById("saida").innerHTML = diferencaDias + " dias, " + diferencaMeses + " meses, " + diferencaAnos + " anos faltam até " + dataEntrada;
+      }
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <label for="data">Entre com uma data:</label>
+    <input type="text" id="data" placeholder="dd/mm/aa">
+    <br>
+    <span id="erro"></span>
+    <br>
+    <input type="button" value="Enviar" onclick="validarData()">
+    <br>
+    <span id="saida"></span>
+  </form>
+</body>
+</html>
+
+</html>
